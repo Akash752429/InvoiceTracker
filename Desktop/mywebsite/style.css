@@ -1,0 +1,9 @@
+body { background: #f4f4f4; font-family: sans-serif; }
+.container { max-width: 800px; margin: auto; background: #fff; padding: 20px; }
+form input, form select { margin: 5px 2px; padding: 6px; }
+form button { background: #03a9f4; color: #fff; padding: 7px 16px; border: none; border-radius: 3px; }
+th, td { border: 1px solid #c2c2c2; padding: 8px 2px; text-align: center; }
+tr:nth-child(even) { background: #f9f9f9; }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+#mansan { margin-bottom: 6px; }
+thead th { background: #eee; }

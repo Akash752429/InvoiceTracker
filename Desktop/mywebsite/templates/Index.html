@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bill & Server Tracker</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #c2c2c2; padding: 7px 3px; text-align: center; }
+    thead th { background: #f0f0f0; }
+    form input, form textarea { margin: 5px 2px; padding: 7px; }
+    form button { background: #03a9f4; color: #fff; padding: 7px 16px; border: none; border-radius: 3px; }
+    .container { max-width: 900px; margin: auto; background: #fff; padding: 20px; }
+    body { background: #f4f4f4; font-family: sans-serif; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Bill & Server Tracker</h1>
+    <form id="bill-form" enctype="multipart/form-data" onsubmit="return addBill(event)">
+      <input type="text" id="company_name" name="company_name" placeholder="Company Name" required>
+      <input type="number" id="shared_servers" name="shared_servers" placeholder="Shared Server Count" min="0" required>
+      <input type="number" id="private_servers" name="private_servers" placeholder="Private Server Count" min="0" required>
+      <textarea id="mansan" name="mansan" placeholder="All Private Server Users (comma separated)" rows="2" required></textarea>
+      <input type="date" id="bdate" name="bdate" required>
+      <input type="number" id="amount" name="amount" placeholder="Amount" min="1" required>
+      <input type="file" id="bfile" name="bill_pdf" accept="application/pdf">
+      <button type="submit">Add Bill</button>
+    </form>
+    <table>
+      <thead>
+        <tr>
+          <th>Sr.</th>
+          <th>Company Name</th>
+          <th>Shared Server</th>
+          <th>Private Server</th>
+          <th>Mansan Name</th>
+          <th>Date</th>
+          <th>Amount</th>
+          <th>PDF</th>
+        </tr>
+      </thead>
+      <tbody id="showrows"></tbody>
+    </table>
+  </div>
+  <script src="/static/main.js"></script>
+</body>
+</html>

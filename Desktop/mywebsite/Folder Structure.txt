@@ -1,0 +1,7 @@
+C:\Users\Admin\Desktop\mywebsite\
+  app.py
+  templates\
+    Index.html
+  static\
+    style.css
+    main.js
