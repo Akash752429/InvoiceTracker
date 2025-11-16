@@ -1,0 +1,7 @@
+mywebsite/
+├─ app.py
+├─ static/
+│   ├─ style.css
+│   └─ main.js
+├─ templates/
+│   └─ Index.html
